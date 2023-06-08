@@ -66,7 +66,7 @@ const NavBar = (props: Props) => {
               fontWeight="bold"
               color={textColor}
             >
-              Tik1Click
+              Tik
             </Heading>
           </Box>
         </Link>
@@ -77,7 +77,7 @@ const NavBar = (props: Props) => {
               lg: 'flex',
             }}
           >
-            <Link href="/trending" locale={router.locale}>
+            {/* <Link href="/trending" locale={router.locale}>
               <Text className={openSans.className} fontSize="md" color="red" fontWeight="600">
                 #Trending
               </Text>
@@ -99,7 +99,7 @@ const NavBar = (props: Props) => {
               <Text className={openSans.className} fontSize="sm" color={textColor} fontWeight="600">
                 {trans.home.privacy}
               </Text>
-            </Link>
+            </Link> */}
           </HStack>
           <Box w="8%" />
           <IconButton
@@ -122,11 +122,6 @@ const NavBar = (props: Props) => {
               </Button>
             </PopoverTrigger>
             <PopoverContent bg={navBackgroundColor} w="100%">
-              {/* <PopoverHeader>
-              <Text fontSize="md" fontWeight="bold" color={textColor}>
-              Languages
-              </Text>
-            </PopoverHeader> */}
               <PopoverBody padding="0px">
                 <List>
                   {LANGUAGES.map((item) => (

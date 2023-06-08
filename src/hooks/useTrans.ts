@@ -17,7 +17,9 @@ type LOCALE = keyof typeof langs;
 const useTrans = () => {
   const { locale } = useRouter();
 
-  const trans = useMemo(() => langs[(locale as LOCALE) ?? 'en'] || langs.en, [locale]);
+  // Use the app's default locale ('vi') when locale is not available to keep
+  // server and client initial renders consistent and avoid hydration mismatches.
+  const trans = useMemo(() => langs[(locale as LOCALE) ?? 'vi'] || langs.vi, [locale]);
 
   return trans;
 };
