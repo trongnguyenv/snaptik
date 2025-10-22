@@ -1,18 +1,3 @@
-import {
-  Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
-  Box,
-  Heading,
-  HStack,
-  ListItem,
-  OrderedList,
-  Text,
-  UnorderedList,
-  VStack,
-} from '@chakra-ui/react';
 import useTrans from '../hooks/useTrans';
 import { useThemeColor } from '@/hooks/useThemeColor';
 import Layout from '@/components/Layout';

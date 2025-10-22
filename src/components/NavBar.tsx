@@ -18,18 +18,13 @@ import {
   useTheme,
   VStack,
 } from '@chakra-ui/react';
-import { Open_Sans } from 'next/font/google';
+import { openSans } from '@/config/fonts';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { MdDarkMode, MdLanguage, MdLightMode } from 'react-icons/md';
 
 type Props = {};
-
-const openSans = Open_Sans({
-  subsets: ['latin'],
-  weight: '400',
-});
 
 const NavBar = (props: Props) => {
   const theme = useTheme();
